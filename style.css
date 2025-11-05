@@ -1,39 +1,137 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  display: grid;
+  justify-items: center;
+  margin: 4rem auto 0 auto;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 60px;
+p{
+  font-size: 20px;
 }
 
-h2 {
-  color: white;
+p, h1, h2 ,h3{
   margin: 0px;
 }
 
-div {
-  background-color: #111;
-  border-radius: 4px;
-  margin: 20px 80px;
-  padding: 30px;
-}
-
-p {
-  color: #b2b2b2;
-}
-
-.numeral {
-  color: #febe01;
-}
-
-a {
-  font-family: Arial, Helvetica, sans-serif;
-  display: inline-block;
-  padding: 10px;
+a{
   text-decoration: none;
-  color: #332200;
-  background-color: #febe01;
+  color: #000;
+}
+
+.vantagens{
+  font-size: 64px;
+  text-align: end;
+  color: #c6c6c6;
+  padding: 2rem;
+}
+
+header{
+  display: grid;
+  justify-items: center;
+  gap: 4rem;
+}
+
+ul{
+  list-style: none;
+}
+
+.navegacao{
+  display: flex;
+  justify-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+li a{
+  padding: 1rem 2rem;
+  background-color: #fff;
   border-radius: 4px;
 }
+
+.bicicleta{
+  width: 100%;
+}
+
+.container,
+.conteudo{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  max-width: 1000px;
+}
+
+.main{
+  display: grid;
+  text-align: end;
+  padding: 2rem;
+  background-color: #fff;
+  position: relative;
+  place-items: end;
+}
+
+main h1::before{
+  top: 40px;
+  right: -30px;
+  content: "";
+  background-color: red;
+  width: 60px;
+  height: 4px;
+  position: absolute;
+}
+
+.main a{
+  color: #fff;
+  background-color: red;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+.conteudo{
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.conteudo-itens{
+  background-color: #fff;
+  padding: 2rem;
+  display: grid;
+
+}
+
+.itens{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.itens p{
+  grid-column: 2;
+}
+
+footer{
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* 
+# Cores
+
+cinza-fundo: #f7f7f7
+cinza-texto: #c6c6c6
+vermelho: #ee2211
+
+# Tipografia
+
+fonte: Arial
+parágrafos: 20px
+Vantagens Bikcraft: 64px
+
+# Tamanhos
+
+conteúdo principal: máximo 1000px */

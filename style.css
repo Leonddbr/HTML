@@ -5,10 +5,11 @@ body {
   display: grid;
   justify-items: center;
   margin: 4rem auto 0 auto;
+  gap: 4rem;
 }
 
 p{
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 p, h1, h2 ,h3{
@@ -21,10 +22,14 @@ a{
 }
 
 .vantagens{
-  font-size: 64px;
+  font-size: 4rem;
   text-align: end;
   color: #c6c6c6;
   padding: 2rem;
+}
+
+.vantagens-h2{
+  background-image: url(/img/onda.svg);
 }
 
 header{
@@ -42,16 +47,23 @@ ul{
   justify-items: center;
   gap: 2rem;
   margin-bottom: 4rem;
+  flex-wrap: wrap;
 }
 
 li a{
   padding: 1rem 2rem;
   background-color: #fff;
   border-radius: 4px;
+  border: 2px solid white;
+}
+
+li a:hover{
+  border-color: red;
 }
 
 .bicicleta{
   width: 100%;
+  
 }
 
 .container,
@@ -86,6 +98,11 @@ main h1::before{
   background-color: red;
   padding: 1rem 2rem;
   border-radius: 4px;
+  transition: .2s;
+}
+
+.main a:hover{
+  background-color: rgb(126, 16, 16);
 }
 
 .conteudo{
@@ -97,7 +114,17 @@ main h1::before{
   background-color: #fff;
   padding: 2rem;
   display: grid;
+}
 
+.conteudo-itens div:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
+.conteudo-itens div{
+  border-left: transparent 4px solid;
+}
+.conteudo-itens div:hover{
+  border-color: red;
 }
 
 .itens{
